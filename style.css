@@ -1,0 +1,19 @@
+.bg-light{
+    background-color: #4267b2 !important;
+}
+.form-control {
+    width: 500px !important;
+}
+.navbar {
+    border-radius: 0px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .content {
+    padding-top: 60px;
+  }

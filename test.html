@@ -6,24 +6,252 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="teststyle.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="bg-light">
+    <div class="navbar" id="stickNav">
         <div>
-            <img src = "image/fb_icon_325x325.png" id = facebook_icon>
+            <a href="#">
+                <img src = "image/fb_icon_325x325.png" id = facebook_icon>
+            </a>
         </div> 
-
         <form>
             <div class="searchbox">
-              <input class ="input" type="text" placeholder="Search">
-              <div class="input-group-btn">
+                <input class ="input" type="text" placeholder=" ค้นหา">
+                <div class="input-group-btn">
                     <button class="btn" type="submit">
                         <i class="material-icons">search</i>
                     </button>
                 </div>
             </div>
-          </form>   
+        </form>   
+        <div class="menu">
+            <div class ="home_menu">
+                <b>ฟหก</b>
+            </div>
+            <div class ="home_menu">
+                <b>หน้าหลัก</b>
+            </div>
+            <div class ="home_menu">
+                <b>สร้าง</b>
+            </div>
+        </div>
     </div>
+
+    <div class="container">
+        <div class="left_menu">
+            <div class ="left" id="stickLeft">
+                <div class="necessary_menu" id="newfeed">
+                    <img src = "image/text-lines.png" id="menu_icon_left">
+                    ฟีดข่าว
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/messenger.png" id="menu_icon_left">
+                    Messenger
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/television.png" id="menu_icon_left">
+                    Watch
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/store.png" id="menu_icon_left">
+                    Marketplace
+                </div>
+                <div class = "nes_text"></div>
+                <div class = "nes_text">    
+                    ทางลัด
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/team.png" id="menu_icon_left">
+                    Stack
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/team.png" id="menu_icon_left">
+                    รวมพลคนไปเที่...
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/game-controller.png" id="menu_icon_left">
+                    Thai Game Dev..
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/team.png" id="menu_icon_left">
+                    Jobs for Thai Pr...
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/idea.png" id="menu_icon_left">
+                    สมาคมโปรแกร...
+                </div>
+                <div class = "seenext_text">    
+                    ดูเพิ่มเติม...
+                </div>
+                <div class = "nes_text"></div>
+                <div class = "nes_text">    
+                    สำรวจ
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/flag.png" id="menu_icon_left">
+                    เพจ
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/group.png" id="menu_icon_left">
+                    กลุ่ม
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/calendar.png" id="menu_icon_left">
+                    งานกิจกรรม
+                </div>
+                <div class="necessary_menu">
+                    <img src = "image/tag.png" id="menu_icon_left">
+                    กลุ่มซื้อขาย
+                </div>
+                <div class = "seenext_text">    
+                        ดูเพิ่มเติม...
+                </div>
+            </div>
+        </div>
+        
+        <div class="main">
+            <div class ="post">
+                <div class = "p_text">
+                    สร้างโพสต์
+                </div>
+                <div calss = "p_input">
+                    asdsa
+                </div>
+            </div>
+
+            <div class ="story_box">
+                <div class = "s_menu">
+                    <div class = "s_text">
+                        สตอรี่
+                    </div>
+                    <div class = "s_text_all">
+                        ดูทั้งหมด
+                    </div>
+                </div>
+                <div class = "s_pic">
+                    <div class ="picitem_1">
+                        asdasd
+                    </div>
+                    <div class ="picitem_2">
+                        vvvv
+                    </div>
+                    <div class ="picitem_3">
+                        hhhh
+                    </div>
+                    <div class ="picitem_4">
+                        rrrr
+                    </div>
+                </div>
+            </div>
+
+            <div class ="post_box">
+                <div class = "post_name">
+                    <div class = cirlce></div>
+                    <div class = status_name>
+                        <div>
+                            Jeremiah (Jeremy) 
+                        </div>
+                        <div class = "s_time">
+                            15 ชม.  
+                            <i class="material-icons" id="type_icon">supervisor_account</i>
+                        </div>
+                    </div>
+                    <div class = status_dot>
+                        <i class="material-icons" id="three_dot">more_horiz</i>
+                    </div>
+                </div>
+                <div class = "post_content">
+                    Need some rigging tut/advice for a streching, bendy, limb/arm.
+                    Ive been doing some tutorials but most are old and most don't cover all the problems you will encounter with the upnodes, for instance.
+                    Most of the systems I tried break when added to the rig.
+                    Ive done also the pluralsight one about the flexyline but I wonder if there is another way too....<a  href="#" style="text-decoration:none; color:#385898;">ดูเพิ่มเติม</a>
+                </div>
+                <div class = "like_status">
+                    <div>
+                        <img src = "image/like_emoji.png" id="status_emoji">
+                        <img src = "image/love_emoji.png" id="status_emoji">
+                        <img src = "image/smile_emoji.png" id="status_emoji">
+                    </div>
+                    <div class="count">
+                        11
+                    </div>
+                    <div class="opinion">
+                        7 ความคิดเห็น
+                    </div>
+                </div>
+                <div class="Separator"></div>
+                <div class="like_button">
+                    <div class="sep_btn"><img src = "image/thumbup_icon.png" id="like_btn">ถูกใจ</div>
+                    <div class="com_div"><img src = "image/comment_icon.png" id="com_btn">แสดงความคิดเห็น</div>
+                    <div class="sep_btn"><img src = "image/share_icon.png" id="like_btn">แชร์</div>
+                </div>
+            </div>
+
+            <div class ="post_box">
+                    <div class = "post_name">
+                        <div class = cirlce></div>
+                        <div class = status_name>
+                            <div>
+                                Jeremiah (Jeremy) 
+                            </div>
+                            <div class = "s_time">
+                                15 ชม.  
+                                <i class="material-icons" id="type_icon">supervisor_account</i>
+                            </div>
+                        </div>
+                        <div class = status_dot>
+                            <i class="material-icons" id="three_dot">more_horiz</i>
+                        </div>
+                    </div>
+                    <div class = "post_content">
+                        Need some rigging tut/advice for a streching, bendy, limb/arm.
+                        Ive been doing some tutorials but most are old and most don't cover all the problems you will encounter with the upnodes, for instance.
+                        Most of the systems I tried break when added to the rig.
+                        Ive done also the pluralsight one about the flexyline but I wonder if there is another way too....<a  href="#" style="text-decoration:none; color:#385898;">ดูเพิ่มเติม</a>
+                    </div>
+                    <div class = "like_status">
+                        <div>
+                            <img src = "image/like_emoji.png" id="status_emoji">
+                            <img src = "image/love_emoji.png" id="status_emoji">
+                            <img src = "image/smile_emoji.png" id="status_emoji">
+                        </div>
+                        <div class="count">
+                            11
+                        </div>
+                        <div class="opinion">
+                            7 ความคิดเห็น
+                        </div>
+                    </div>
+                    <div class="Separator"></div>
+                    <div class="like_button">
+                        <div class="sep_btn"><img src = "image/thumbup_icon.png" id="like_btn">ถูกใจ</div>
+                        <div class="com_div"><img src = "image/comment_icon.png" id="com_btn">แสดงความคิดเห็น</div>
+                        <div class="sep_btn"><img src = "image/share_icon.png" id="like_btn">แชร์</div>
+                    </div>
+                </div>
+
+        </div>
+        <div class="sidebar">
+            Sidebar
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("stickNav");
+        var leftbar = document.getElementById("stickLeft");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) 
+            {
+                navbar.classList.add("sticky")
+                leftbar.classList.add("stickLeft")
+            } else {
+                navbar.classList.remove("sticky");
+                leftbar.classList.remove("stickLeft")
+            }
+        }
+    </script>
 </body>
 </html>

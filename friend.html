@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="friendstyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar" id="stickNav">
+            <div>
+                <a href="#">
+                    <img src = "image/fb_icon_325x325.png" id = facebook_icon>
+                </a>
+            </div> 
+            <form>
+                <div class="searchbox">
+                    <input class ="input" type="text" placeholder=" ค้นหา">
+                    <div class="input-group-btn">
+                        <button class="btn" type="submit">
+                            <i class="material-icons">search</i>
+                        </button>
+                    </div>
+                </div>
+            </form>   
+            <div class="menu">
+                <div class ="home_menu">
+                    <b>ฟหก</b>
+                </div>
+                <div class ="home_menu">
+                    <b>หน้าหลัก</b>
+                </div>
+                <div class ="home_menu">
+                    <b>สร้าง</b>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="cover">
+            <img class ="cover_img"src="image/cover.jpg">
+            <div class = "c_menu">
+                <div class="timeline">
+                    ไทม์ไลน์
+                </div>
+                <div class="about">
+                    เกี่ยวกับ
+                </div>
+                <div class="friend">
+                    เพื่อน มีเพื่อนร่วมกัน 65 คน
+                </div>
+                <div class="image_self">
+                    รูปภาพ
+                </div>
+                <div class="more_info">
+                    เพิ่มเติม
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("stickNav");
+        var leftbar = document.getElementById("stickLeft");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+            if (window.pageYOffset >= sticky) 
+            {
+                navbar.classList.add("sticky")
+                leftbar.classList.add("stickLeft")
+            } else {
+                navbar.classList.remove("sticky");
+                leftbar.classList.remove("stickLeft")
+            }
+        }
+    </script>
+</body>
+</html>

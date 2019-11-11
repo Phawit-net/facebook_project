@@ -88,31 +88,52 @@ body {
     grid-template-columns: 180px 500px 320px;
     color: #FFF;
     font-weight: bold;
-    margin-right: 880px;
     margin-left: 350px;
-  } 
-  
-  .header, .main, .footer {
+} 
+
+.header, .main, .footer {
     padding: 10px;
-  }
+}   
   
-  
-  
-  .post{
-      background-color: #FFF;
-      border-radius: 4px;
-  }
 
-  .p_text{
-      color: #4b4f56;
-      background-color: #f5f6f7;
-      padding:8px 10px;
-      border-radius: 4px;
-      border:1px solid #dddfe2;
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-  }
+.post{
+    background-color: #FFF;
+    border-radius: 4px;
+    border:1px solid #dddfe2;
+}
 
+.p_text{
+    color: #4b4f56;
+    background-color: #f5f6f7;
+    padding: 10px;
+    border-radius: 4px;
+    border-bottom:1px solid #dddfe2;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.p_input{
+    display: grid;
+    grid-template-columns: 46px 414px;
+    padding: 10px;
+}
+.circle{
+    border-radius: 50%;
+    background-color: aqua;
+    width: 46px;
+    height: 46px;
+    /* margin:10px; */
+}
+.what_think{
+    padding: 8px;
+    color:#616770;
+}
+.p_add{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 115px 115px 115px 113px;
+    color:#616770;
+
+}
   .story_box{
     background-color: #FFF;
     border-radius: 4px;
@@ -161,14 +182,14 @@ body {
 }
 .post_name{
     display: grid;
-    grid-template-columns: 68px 370px 34px;
+    grid-template-columns: 66px 370px 42px;
 }
 .cirlce{
     border-radius: 50%;
     background-color: aqua;
-    width: 45px;
-    height: 45px;
-    margin: 8px 12px;
+    width: 46px;
+    height: 46px;
+    margin:10px;
 }
 .status_name{
     display: grid;
@@ -179,6 +200,7 @@ body {
 .status_dot{
     text-align: center;
     padding-top:8px ;
+    padding-right:10px ;
 }
 #three_dot{
     color:#606770;
@@ -224,6 +246,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     border: 0.5px solid #dddfe2;
+    margin: 5px 5px 0px 15px;
 }
 .like_button{
     display: grid;

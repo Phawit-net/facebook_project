@@ -10,6 +10,7 @@
     <title>Document</title>
 </head>
 <body>
+    <div class='z_background'></div>
     <div class="navbar" id="stickNav">
         <div>
             <a href="#">
@@ -119,7 +120,7 @@
                 <div class = "p_input">
                     <div class = circle></div>
                     <div class = "what_think">
-                        คุณกำลังคิดอะไรอยู่
+                        <input type="text" placeholder="คุณกำลังคิดอะไรอยู่" id="text_input" onfocus='myselect(this)' onblur='mydeselect(this)'>
                     </div>
                 </div>
                 <div class="Separator"></div>
@@ -136,8 +137,26 @@
                         <img src = "image/happy.png" id="status_emoji">
                         ความรู้สึก
                     </div>
-                    <div>
+                    <div class=p_layout>
+                        <i class="material-icons" id="three_dot">more_horiz</i>
                     </div>
+                </div>
+                <div class = "p_choose display">
+                    <div class = choose_border>
+                        <img src = "image/blog.png" id="status_emoji">
+                        <img src = "image/post.png" class = circle_i>      
+                        ฟีดข่าว                    
+                    </div>
+                    <div class = choose_border>
+                        <img src = "image/blog.png" id="status_emoji">
+                        <img src = "image/post.png" class = circle_i>      
+                        สตอรี่ของคุณ
+                    </div>
+                </div>
+                <div class = "post_btn display">
+                    <div class = p_btn>
+                        โพสต์
+                    </div>  
                 </div>
             </div>
 
@@ -256,7 +275,9 @@
         <div class="sidebar">
             Sidebar
         </div>
+        
     </div>
+    
     <script>
         window.onscroll = function() {myFunction()};
         var navbar = document.getElementById("stickNav");
@@ -271,6 +292,19 @@
                 navbar.classList.remove("sticky");
                 leftbar.classList.remove("stickLeft")
             }
+        }
+
+        function myselect(){
+            var choose = document.getElementsByClassName("p_choose");
+            var post_btn = document.getElementsByClassName("post_btn");
+            choose[0].classList.remove("display")
+            post_btn[0].classList.remove("display")
+        }
+        function mydeselect(){
+            var choose = document.getElementsByClassName("p_choose");
+            var post_btn = document.getElementsByClassName("post_btn");
+            choose[0].classList.add("display")
+            post_btn[0].classList.add("display")
         }
     </script>
 </body>

@@ -28,7 +28,7 @@ body {
 #facebook_icon{
     width: 29px;
     padding-right: 10px;
-    padding-left: 350px;
+    padding-left: 150px;
     padding-top: 8px;
     padding-bottom: 4px;
 }
@@ -88,13 +88,12 @@ body {
     grid-template-columns: 180px 500px 320px;
     color: #FFF;
     font-weight: bold;
-    margin-left: 350px;
+    margin-left: 150px;
 } 
 
 .header, .main, .footer {
     padding: 10px;
 }   
-  
 
 .post{
     background-color: #FFF;
@@ -130,9 +129,14 @@ body {
 .p_add{
     padding: 10px;
     display: grid;
-    grid-template-columns: 115px 115px 115px 113px;
+    grid-template-columns: 130px 110px 120px 98px;
     color:#616770;
-
+    font-size: 13px;
+}
+.p_layout{
+    display: grid;
+    grid-template-columns: 27px 93px;
+    
 }
   .story_box{
     background-color: #FFF;
